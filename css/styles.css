@@ -58,7 +58,6 @@ ul{ list-style: none;
 .link:focus, .link-contacts:focus {
   color:var(--accent-text-color)
 }
-
 /* main*/
 .main {
   background-color: var(--accent-bg-color);
@@ -144,7 +143,6 @@ var(--accent-text-color);
 }
 
 /* portfolior*/
-
 .button
 {cursor: pointer;
 }
