@@ -54,7 +54,7 @@ ul{ list-style: none;
   text-decoration: none;
 }
 
-.link:hover,.link-contacts:hover
+.link:hover,.link-contacts:hover,
 .link:focus, .link-contacts:focus {
   color:var(--accent-text-color)
 }
