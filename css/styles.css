@@ -18,7 +18,10 @@ body {
 
 ul{ list-style: none; 
 }
-
+a, address {
+  font-style: normal;
+  text-decoration: none;
+}
 /* logo style*/
 .logo-web{
   color: var(--accent-text-color);
@@ -28,15 +31,14 @@ ul{ list-style: none;
 }
 .logo, .logo-web, .footer-logo, .footer-logo-web{
   font-family: 'Raleway';
-  font-style: normal;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.header-list {
+
+.header {
   color: var(--primary-text-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -44,14 +46,8 @@ ul{ list-style: none;
   text-decoration: none;
 }
 
- .header-item {
-  color: var(--second-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+ .header-contact {
+ color: var(--second-text-color);
 }
 
 .link:hover,.link-contacts:hover,
@@ -62,7 +58,6 @@ ul{ list-style: none;
 .main {
   background-color: var(--accent-bg-color);
   color: var(--second-bg-color);
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -73,22 +68,19 @@ ul{ list-style: none;
 .main-button {
   background-color: var(--active-bg-color);
   color: var(--second-bg-color);
-  font-style: normal;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
 
-   .company-title {
-    font-style: normal;
+.company-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
    }  
-   .company-description {
+.company-description {
     color: var(--second-text-color);
-    font-style: normal;
     line-height: 24px;
     font-size: 1.71;
     letter-spacing: 0.03em;
@@ -97,7 +89,6 @@ ul{ list-style: none;
   
 .work-titel, .team-titel {
   color: var(--primary-text-color);
-  font-style: normal;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -110,7 +101,6 @@ ul{ list-style: none;
   background-color: var(--primary-bg-color);
 }
 .team-description {
-  font-style: normal;
   line-height: 19px;
   font-size: 16px;
   letter-spacing: 0.03em
@@ -121,9 +111,10 @@ ul{ list-style: none;
 .footer {
   background-color: var(--accent-bg-color);
 }
+
 .footer-list, .link-adress{
-  color: var(--buttoms-text-color--);
   font-style: normal;
+  color: var(--buttoms-text-color--);
   font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.03em; 
