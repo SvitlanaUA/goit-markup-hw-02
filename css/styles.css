@@ -51,8 +51,8 @@ a, address {
  color: var(--second-text-color);
 }
 
-.link:hover,.link-contacts:hover,
-.link:focus, .link-contacts:focus {
+.link:hover,.link-contacts:hover,.header-link:hover,
+.link:focus, .link-contacts:focus,.header-link:focus {
   color:var(--accent-text-color)
 }
 /* main*/
