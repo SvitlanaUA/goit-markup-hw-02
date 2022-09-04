@@ -116,7 +116,7 @@ a:active {
 .team-heroes{
   font-weight: 500;
   line-height: 1.14;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .team-description {
