@@ -56,8 +56,8 @@ a:active {
  color: var(--second-text-color);
 }
 
-.link:hover,.header-link:hover,
-.link:focus, .header-link:focus, {
+.link:hover,.header-link:hover,.link.current:hover,
+.link:focus, .header-link:focus,.link.current:focus {
   color:var(--accent-text-color)
 }
 .header-list .link.current{
