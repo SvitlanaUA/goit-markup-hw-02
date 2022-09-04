@@ -28,6 +28,7 @@ a:active {
   cursor: pointer;
   color:var(--accent-text-color)
 }
+
 /* logo style*/
 .logo-web{
   color: var(--accent-text-color);
@@ -38,7 +39,7 @@ a:active {
 .logo, .logo-web, 
 .footer-logo, 
 .footer-logo-web{
-  font-family: 'Raleway';
+  font-family: Raleway; sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -59,7 +60,9 @@ a:active {
 .link:focus, .header-link:focus, {
   color:var(--accent-text-color)
 }
-
+.header-list .link.current{
+  color: var(--accent-text-color);
+}
 /* main*/
 .main{
   background-color: var(--accent-bg-color);
@@ -76,6 +79,7 @@ a:active {
 .main-button {
   background-color: var(--active-bg-color);
   color: var(--second-bg-color);
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -157,6 +161,7 @@ var(--accent-text-color);
 .button{
   background-color: var(--buttoms-bg-color--);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -171,6 +176,7 @@ var(--accent-text-color);
 .projects-description{
   color: var(--second-text-color);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+
 }
 
