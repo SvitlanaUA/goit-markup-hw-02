@@ -10,6 +10,20 @@
     --buttoms-bg-color--:#F5F4FA;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+ul{
+  padding-left: 0;
+}
+
 body {
     font-family: Roboto, sans-serif;
     background-color: var(--primary-bg-color) ;
@@ -27,6 +41,15 @@ a, address {
 a:active {
   cursor: pointer;
   color:var(--accent-text-color)
+}
+*{
+  outline: 1px solid red}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* logo style*/
@@ -50,6 +73,8 @@ a:active {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  border-bottom: solid;
 }
 
 .header-link {
@@ -66,41 +91,55 @@ a:active {
 }
 /* main*/
 .main{
+  outline: 1px solid red;
   background-color: var(--accent-bg-color);
+  padding: 200px 0 280px 0;
+  text-align: center;
 }
+
 .main-title{
   color: var(--second-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .main-button {
   background-color: var(--active-bg-color);
   color: var(--second-bg-color);
+ 
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+ 
+  margin-top: 30px;
 }
-
+.section{
+  margin-top: 94px;
+}
 .company-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
    }  
+   .company-item, .work-item, 
+   .team-item, .team-heroes {
+    margin-top: 30px;
+   }
 .company-description {
     color: var(--second-text-color);
     line-height: 1.71;
+    margin-top: 10px;
   }
- 
+ .work-list, .team-title, .company-item {
+  margin-top: 50px;
+ }
 .work-titel, .team-titel {
   color: var(--primary-text-color);
   font-size: 36px;
@@ -125,6 +164,7 @@ a:active {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-top: 10px;
 }
 
 .footer {
