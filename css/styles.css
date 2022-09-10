@@ -45,9 +45,10 @@ a:active {
   color:var(--accent-text-color)
 }
 
-*{
-  outline: 1px solid red
+img{
+  display: block;
 }
+
 
 .container {
   width: 1200px;
@@ -57,7 +58,11 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
-
+.hidden{
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
 /* logo style*/
 
 .logo-web{
@@ -81,7 +86,7 @@ a:active {
 .header {
   display: block;
   padding-top: 32px;
-  border-bottom: solid;
+  border-bottom: 2px solid #F5F4FA;
 
   color: var(--primary-text-color);
 
@@ -99,7 +104,6 @@ a:active {
   margin-left: 93px;
 }
   
-
 .header-list, 
 .link.current {
   display: flex;
@@ -122,7 +126,6 @@ a:active {
 .header-contact{
   display: flex;
   margin-left: auto;
-
 }
 
 .header-contact .item + .item{
@@ -131,22 +134,20 @@ a:active {
 
 .link, .link-current{
   display: block;
-
   padding-top: 21px;
   padding-bottom: 21px;
 }
 
 /* main*/
-.main{
-  outline: 1px solid red;
-  background-color: var(--accent-bg-color);
-  padding: 200px 0 280px 0;
-  text-align: center;
-}
-
 .section{
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.main{
+  background-color: var(--accent-bg-color);
+  padding: 200px 0 280px 0;
+  text-align: center;
 }
 
 .main-title{
@@ -160,7 +161,7 @@ a:active {
 
 .main-button {
   margin-top: 30px;
-
+  
   background-color: var(--active-bg-color);
   color: var(--second-bg-color);
  
@@ -172,19 +173,20 @@ a:active {
   letter-spacing: 0.06em;
 }
 
+/*company section*/
 
 .company-list {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .company-item {
+  margin-top: 50px;
   width: 270px;
-  background-color: navajowhite;
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 .company-title {
     font-size: 14px;
     line-height: 1.14;
@@ -198,52 +200,61 @@ a:active {
 }
 
 .company-description {
-    margin-top: 10px;
+    padding-top: 10px;
     
     color: var(--second-text-color);
     line-height: 1.71;
-    
   }
-  
+
+  /*work section*/
+
   .work-list{
     display: flex;
-    align-items: center;
-
+    margin-left: auto;
+    margin-top: 50px 
   }
+
+ .work-item{
+  width: 370px;
+ }
+
   .work-list
   .work-item+.work-item{
   margin-left: 30px;
 }
- .work-list, 
- .team-title, 
- .company-item {
-  margin-top: 50px;
- }
 
-.work-titel, 
-.team-titel {
+.work-title, 
+.team-title {
   color: var(--primary-text-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
+/* team section*/
 .team{
   background-color: var(--second-bg-color);
+}
+.team-title{
+  margin-top: 50px;
 }
 
 .team-list{
   display: flex;
   margin-left: auto;
+  margin-top: 50px
 }
 
 .team-item {
   background-color: var(--primary-bg-color);
-
+  width: 270px;
 }
 
 .team-list .team-item + .team-item{
   margin-left: 30px;
+}
+.team-block{
+  padding: 30px 60px 30px 60px;
 }
 .team-heroes{
   font-weight: 500;
@@ -252,17 +263,24 @@ a:active {
 }
 
 .team-description {
+  padding-top: 10px;
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin-top: 10px;
+ 
 }
 
 /* foter*/
 
 .footer {
+  padding-top: 60px;
   background-color: var(--accent-bg-color);
+}
+
+.footer-list{
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .footer-list, .link-adress{
@@ -270,6 +288,9 @@ a:active {
   color: var(--buttoms-text-color--);
   line-height: 1.18;
   text-decoration: none;
+}
+.footer-item{
+  padding-bottom: 9px;
 }
 
 .link-contacts{
@@ -280,8 +301,7 @@ a:active {
   color: var(--primary-bg-color);
 }
 .footer-logo-web{
-color: 
-var(--accent-text-color);
+color: var(--accent-text-color);
 }
 
 
@@ -292,29 +312,33 @@ var(--accent-text-color);
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  background-color: tomato;
 }
 
 .projects-item{
   width: 370px;
-  background-color: navajowhite;
   margin-right: 30px;
   margin-bottom: 30px;
-
 }
-.projects-item:nth-child(3n)
-{
+
+.projects-block {
+  padding: 20px 24px;
+
+  border: 2px solid #F5F4FA;
+  
+}
+
+.projects-item:nth-child(3n){
   margin-right: 0;
 }
 
-.projects-item:nth-last-child(-n +3)
-{
+.projects-item:nth-last-child(-n +3){
   margin-bottom: 0;
 }
+
 .portfolio-filter{
   padding-bottom: 16px;
-  
 }
+
 .portfolio-list 
 .portfolio-filter+.portfolio-filter{
   padding-left: 8px;
@@ -338,19 +362,16 @@ var(--accent-text-color);
   text-align: center; 
 }
 .projects-titel{
-  margin: 20px 24px 0px 24px;
-  
+  padding-bottom: 4px;
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .projects-description{
-  margin: 4px 24px 20px 24px;
 
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.87;
-
 }
 
